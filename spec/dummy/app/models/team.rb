@@ -4,7 +4,7 @@ class Team < ActiveRecord::Base
   has_many :coaches
   has_many :players
 
-  validates :name, :color, presence: true
+  validates :name, presence: true
 
   def fae_display_field
     name
